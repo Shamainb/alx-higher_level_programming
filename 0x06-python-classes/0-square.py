@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-"""This class defines a square"""i
+"""This class defines a square."""
 
 
 class Square:
 
-    """Write a square"""
+    """Write a square."""
     pass
