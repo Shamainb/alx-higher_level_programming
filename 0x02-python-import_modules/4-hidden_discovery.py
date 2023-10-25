@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-
+import hidden_4
 if __name__ == "__main__":
-    """Print namesdefined by hidden_5 module."""
-    import hidden_4
-
-    names = dir(hidden_4)
-    for name in names:
-        if name[:2] != "__":
-            print(name)
+    mem = dir(hidden_4)
+    num = len(mem)
+    for i in range(0, num):
+        if mem[i].startswith('_'):
+            continue
+        else:
+            print("{}".format(mem[i]))
