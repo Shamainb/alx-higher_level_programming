@@ -8,9 +8,5 @@ def read_file(filename=""):
     Args:
     filename: the file we are reading and print
     """
-    try:
-        with open(filename, "r", encoding="UTF8") as file:
-            content = file.read()
-            print(content)
-    except Exception as e:
-        print("Error:", e)
+    with open(filename, "r", encoding="UTF8") as file:
+        print(file.read(), end="")
