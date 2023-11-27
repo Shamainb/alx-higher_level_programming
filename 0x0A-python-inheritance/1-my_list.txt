@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+"""This module contains a class that inherits
+    the list data structure
+    """
+
+
+class MyList(list):
+    """The class is a sub-class of list
+        Args:
+            list: The list data structure
+        Returns:
+            Nothing
+            """
+    def print_sorted(self):
+        """A method of MyList class
+            that prints a sorted list
+        """
+        print(sorted(self))
+This test file contains the tests for 1-my_list.py
+
+import of the class My_List
+>>> MyList =__import__('1-my_list').MyList
+
+creation of an empty list
+>>> my_list = MyList()
+
+creation of a non-empty list
+>>> my_list = MyList([3,8,10,20])
+
+calling print function on the created list
+>>> print(my_list)
+[3, 8, 10, 20]
+
+creation with both positive and negative integers
+>>> my_list = MyList([-3,8,-10,-20])
+>>> print(my_list)
+[-3, 8, -10, -20]
+
+calling of the print_sorted method
+>>> my_list.print_sorted()
+[-20, -10, -3, 8]
